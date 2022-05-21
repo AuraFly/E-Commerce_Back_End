@@ -45,7 +45,7 @@ router.get('/:id', async (req, res) => {
       ]
     })
     if (!prodInfo) {
-      res.status(404).json({ message: 'Could not find a tag with this ID.'});
+      res.status(404).json({ message: 'Could not find a product with this ID.'});
       return;
     }
 
@@ -138,7 +138,7 @@ router.delete('/:id', async (req, res) => {
       }
     });
     if (!prodInfo) {
-      res.status(404).json({ message: 'Could not find a tag with this ID.' });
+      res.status(404).json({ message: 'Could not find a product with this ID.' });
       return;
     }
     res.status(200).json(prodInfo);
